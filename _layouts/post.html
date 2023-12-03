@@ -1030,8 +1030,8 @@ img {max-width: 100%; height: auto;border-radius:0}
 .Label li {display:inline-block;list-style:none;margin:0px 0px 5px 0px;background:#fff;padding:5px 8px;width:48%;font-size:16px;border-radius:3px;}
 .FeaturedPost .post-summary {padding:10px;background:#ffffff;border-radius:3px;margin-top:-8px}
 .FeaturedPost h3 {font-size: 18px;line-height:1.3em;margin-top:-10px}
-.FeaturedPost p {font-size: 14px;line-height:1.3em}
-h2.post-title.entry-title,h2.post-title.entry-title a {padding-top:0px;margin-top:0px}
+.FeaturedPost p {font-size: 14px;line-height:1.3em}.post-body p {text-align: justify;}
+h2.post-title.entry-title,h2.post-title.entry-title a {padding-top: 0px; margin: 10px 0 0 0;}
 #right-bar h3.title{padding:10px; margin:20px 0 10px 0;background:#2167c7;color:#ffffff;font-size: 20px;border-radius:3px;}
 .BlogArchive li {font-size: 16px;line-height:1.3em;}
 #ArchiveList {overflow:auto; width:auto; height:300px; background:white; border-radius:3px; padding:8px;margin-top:0;}
@@ -1269,14 +1269,12 @@ Menu Melayang
 <div class='post hentry'>
 <a name='8890409981608383044'></a>
 <div class='post-header'>
-<div class='post-header-line-1'></div>
+<div class='post-header-line-1' style="border-bottom: 2px solid #d0e4ff;">
+	<div class="separator" style="clear: both;"><img loading="lazy" alt="{% if page.title %}{{ page.title }}{% endif %}" border="0" data-original-height="450" data-original-width="800" height="368" src="{% if page.image %}{{ page.image }}{% endif %}" width="654" srcset="{% if page.image %}{{ page.image }}{% endif %}?w=720 720w, {% if page.image %}{{ page.image }}{% endif %}?w=480 480w, {% if page.image %}{{ page.image }}{% endif %}?w=1080 1080w, {% if page.image %}{{ page.image }}{% endif %}?w=360 360w"/></div><h2 class='post-title entry-title'>
+<a href='{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}'>{% if page.title %}{{ page.title }}{% endif %}</a>
+</h2></div>
 </div>
 <div class='post-body entry-content' id='post-body-8890409981608383044'>
-  <h2 class='post-title entry-title'>
-<a href='{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}'>{% if page.title %}{{ page.title }}{% endif %}</a>
-</h2>
-  <div class="separator" style="clear: both;"><img loading="lazy" alt="{% if page.title %}{{ page.title }}{% endif %}" border="0" data-original-height="450" data-original-width="800" height="368" src="{% if page.image %}{{ page.image }}{% endif %}" width="654" srcset="{% if page.image %}{{ page.image }}{% endif %}?w=720 720w, {% if page.image %}{{ page.image }}{% endif %}?w=480 480w, {% if page.image %}{{ page.image }}{% endif %}?w=1080 1080w, {% if page.image %}{{ page.image }}{% endif %}?w=360 360w"/></div>
-  
   {{ content }}
   </div>
 <div class='post-footer'>
