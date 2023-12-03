@@ -2359,5 +2359,50 @@ $('#page-loader').fadeIn(1000).delay(9000).fadeOut(1000);
 //]]>
 </script>
 
-</body>
+
+<style>
+  div#Regisform,div#Tombolregis{opacity:0;transition:.5s;position:fixed}a.submit,p.Regisform-title{text-align:center;color:#fff}a#Regisform-icon::before,span.Regisform-x{position:absolute}div#Tombolregis{top:0;left:0;right:0;bottom:0;z-index:-99;background:rgba(0,0,0,.5)}a#Regisform-icon::before,div#Regisform,span.Regisform-x::before{top:50%;left:50%;transform:translate(-50%,-50%)}div#Tombolregis.aktif{z-index:9999;opacity:1}div#Regisform{max-width:480px;width:95%;background:#fff;z-index:-1;border-radius:5px;overflow:hidden;box-shadow:0 2px 5px rgba(0,0,0,.5)}div#Regisform.aktif{z-index:999999;opacity:1}p.Regisform-title{margin:0;padding:15px;font-size:16px;font-weight:700;background:linear-gradient(to bottom right,rgba(10,126,253,.8),rgba(210,10,253,.8)) 0 0/cover,url("https://2.bp.blogspot.com/-tUBKDTJY4kc/Wo4le9Tv9kI/AAAAAAAAAAg/thnUiN6-Jqo6EFlBQZV_rWbI3kfOOGS9ACLcBGAs/s1600/bg-header.jpg") center center/cover no-repeat}.Regisform-body{padding:14px;display:flex;flex-wrap:wrap;width:100%;box-sizing:border-box}.Regisform-input{border:1px solid #ddd;border-radius:3px;font-size:14px;line-height:32px;padding:0 10px;box-shadow:inset 0 0 2px rgba(0,0,0,.1)}.Regisform-input.form-setengah{width:48%;margin:1% 1% 10px}.Regisform-input.full{width:98%;resize:none;min-height:150px;margin:0 1%}a.submit{line-height:24px;padding:10px 15px;width:100%;max-width:220px;background:#03b74f;margin:14px auto 0;display:block;border-radius:6px;cursor:pointer}a:hover.submit{background:green}span.Regisform-x{top:5px;right:5px;height:30px;width:30px;border:2px solid #fff;border-radius:50px;corsor:pointer}a#Regisform-icon{position:fixed;bottom:20px;left:20px;line-height:0;border-radius:50%;background:#2ecc71;padding:0;height:42px;width:42px;color:#fff;box-shadow:0 10px 20px rgba(0,0,0,.1);z-index:99999}span.Regisform-x::before{content:"";position:absolute;height:3px;width:50%;background:#fff}@media (max-width:480px){.Regisform-input.form-setengah{width:100%;margin:0 0 10px}a#Regisform-icon{bottom:80px;left:10px}.Regisform-input.full{width:100%;margin:0}}</style>
+<div class="Tombolregis" id="Tombolregis">
+
+</div>
+
+<div id="Regisform">
+
+<span class="Regisform-x" onclick="Tutupregis()"></span>
+
+<p class="Regisform-title bg-gradien-linear">Pendaftaran via Website</p>
+
+<div class="Regisform-body">
+<iframe src="https://istanareload.co.id/daftar.php?upline=IR05202&up=0" frameborder="0" scrolling="yes" style="width:100%;height:240px"></iframe>
+
+
+</div>
+
+</div>
+
+<script>
+
+function Tutupregis() {
+
+document.getElementById('Tombolregis').classList.remove('aktif')
+
+document.getElementById('Regisform').classList.remove('aktif')
+
+}
+
+function Bukaregis() {
+
+document.getElementById('Tombolregis').classList.add('aktif')
+
+document.getElementById('Regisform').classList.add('aktif')
+
+}
+
+
+    
+           
+
+
+
+</script></body>
 </html>
