@@ -775,7 +775,7 @@ function whatsappchat() {
                     nama = $('#whatsappchat .nama').val(),
                     alamat = $('#whatsappchat .alamat').val(),
                     pesan = $('#whatsappchat .whatsapp').val();
-            $(this).attr('href', url_wa + '?phone=62' + tujuan + '&text=KERJA%23' + nama + '%23----' + kota);
+            $(this).attr('href', url_wa + '?phone=62' + tujuan + '&text=KERJA%23' + nama + '%23' + kota);
             var w = 960,
                     h = 540,
                     left = Number((screen.width / 2) - (w / 2)),
