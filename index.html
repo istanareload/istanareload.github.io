@@ -767,7 +767,7 @@ function whatsappchat() {
             // Check Device (Mobile/Desktop)
             var url_wa = 'https://api.whatsapp.com/send';
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                url_wa = 'https://api.whatsapp.com/send';
+                url_wa = 'whatsapp://send/';
             }
             // Get Value
             var tujuan = $('#whatsappchat .tujuan').val(),
@@ -775,7 +775,7 @@ function whatsappchat() {
                     nama = $('#whatsappchat .nama').val(),
                     alamat = $('#whatsappchat .alamat').val(),
                     pesan = $('#whatsappchat .whatsapp').val();
-            $(this).attr('href', url_wa + '?phone=62' + tujuan + '&text=KERJA%23' + nama + '%23' + kota);
+            $(this).attr('href', url_wa + '?phone=62' + tujuan + '&text=KERJA%23' + nama + '%23' + alamat);
             var w = 960,
                     h = 540,
                     left = Number((screen.width / 2) - (w / 2)),
