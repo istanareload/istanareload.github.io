@@ -73,7 +73,11 @@ default="small Arial,Geneva,sans-serif"/>
 <Variable name="foot.font" description="Font" type="font" default="small Geneva,Arial,sans-serif"/>
 </Group>
 */
-#layout:before{content:'Blogspot Landing Page Builder 22-8-2022';position:absolute;top:20px;left:5px;right:5px;height:1px;text-align:center}
+.separator img {
+    border-radius: 12px;
+}.separator {
+    text-align: center;
+}#layout:before{content:'Blogspot Landing Page Builder 22-8-2022';position:absolute;top:20px;left:5px;right:5px;height:1px;text-align:center}
 #layout #outer-wrapper{width:100%;}
 #layout #left-side{width:70%;float:left;overflow:hidden;}
 #layout #right-bar{overflow:hidden;}
@@ -1274,7 +1278,7 @@ Menu Melayang
   <h2 class='post-title entry-title'>
 <a href='{{ site.url }}{% if page.permalink %}{{ page.permalink }}{% endif %}'>{% if page.title %}{{ page.title }}{% endif %}</a>
 </h2>
-  <div class="separator" style="clear: both; text-align: left;"><img loading="lazy" alt="{% if page.title %}{{ page.title }}{% endif %}" border="0" data-original-height="450" data-original-width="800" height="368" src="{% if page.image %}{{ page.image }}{% endif %}" width="654" srcset="{% if page.image %}{{ page.image }}{% endif %}?w=720 720w, {% if page.image %}{{ page.image }}{% endif %}?w=480 480w, {% if page.image %}{{ page.image }}{% endif %}?w=1080 1080w, {% if page.image %}{{ page.image }}{% endif %}?w=360 360w"/></div>
+  <div class="separator" style="clear: both;"><img loading="lazy" alt="{% if page.title %}{{ page.title }}{% endif %}" border="0" data-original-height="450" data-original-width="800" height="368" src="{% if page.image %}{{ page.image }}{% endif %}" width="654" srcset="{% if page.image %}{{ page.image }}{% endif %}?w=720 720w, {% if page.image %}{{ page.image }}{% endif %}?w=480 480w, {% if page.image %}{{ page.image }}{% endif %}?w=1080 1080w, {% if page.image %}{{ page.image }}{% endif %}?w=360 360w"/></div>
   
   {{ content }}
   </div>
