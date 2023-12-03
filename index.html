@@ -2182,13 +2182,14 @@ $('#page-loader').fadeIn(1000).delay(9000).fadeOut(1000);
 <span class="Regisform-x" onclick="Tutupregis()"></span>
 <p class="Regisform-title bg-gradien-linear">PENDAFTARAN VIA WEBSITE</p>
 <div class="Regisform-body" id="Regisformbody">
+	<center><b>Loading...</b></center>
 </div>
 </div>
 <script>
 function Tutupregis() {
   document.getElementById('Tombolregis').classList.remove('aktif');
   document.getElementById('Regisform').classList.remove('aktif');
-  document.getElementById('Regisformbody').innerHTML=''
+  document.getElementById('Regisformbody').innerHTML='<center><b>Loading...</b></center>'
 } 
 function Bukaregis() {
   document.getElementById('Tombolregis').classList.add('aktif');
