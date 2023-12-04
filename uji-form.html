@@ -25,16 +25,16 @@ permalink: /uji-form/
                 <div class="card card-primary">
                   <div class="card-header"><h4>Registrasi</h4></div>
                   <div class="card-body">
-<!--<iframe title="sukses" style="display:none" name="iframe_sukses" id="iframe_sukses" onload="if(typeof sent_uexxnchhss!=&#039;undefined&#039;){berhasil()}"></iframe>-->
-<form id="register-form" method="post">
+                    <iframe title="sukses" style="display:none" name="iframe_sukses" id="iframe_sukses" onload="if(typeof sent_uexxnchhss!=&#039;undefined&#039;){berhasil()}"></iframe>
+<form id="register-form" method="post" action="https://istanareloadofficial.freeregistrasi.site/istana/daftar.php" target="iframe_sukses" onsubmit="sent_uexxnchhss=true">
                       <div class="form-group field-registerform-nama has-success">
-                        <input type="text" id="registerform-nama" class="form-control" name="RegisterForm[nama]" placeholder="Nama" aria-invalid="false">
+                        <input type="text" id="registerform-nama" class="form-control" name="nama" placeholder="Nama" aria-invalid="false">
                       </div>
                       <div class="form-group field-registerform-alamat">
-                        <input type="text" id="registerform-alamat" class="form-control" name="RegisterForm[alamat]" placeholder="Alamat">
+                        <input type="text" id="registerform-alamat" class="form-control" name="alamat" placeholder="Alamat">
                       </div>
                       <div class="form-group field-registerform-nomorhp">
-                        <input type="text" id="registerform-nomorhp" class="form-control" name="RegisterForm[nomorhp]" placeholder="Nomor HP">
+                        <input type="text" id="registerform-nomorhp" class="form-control" name="nomorhp" placeholder="Nomor HP">
                       </div>
                       <div class="form-captcha">
                         <div class="form-group field-registerform-captcha">
@@ -53,8 +53,8 @@ permalink: /uji-form/
                         </div>
                       </div>
                       <div class="form-group">
-                        <input type="hidden" id="registerform-upline" name="RegisterForm[upline]" value="IR05201">
-                        <input type="hidden" id="registerform-up" name="RegisterForm[up]" value="25">
+                        <input type="hidden" id="registerform-upline" name="upline">
+                        <input type="hidden" id="registerform-up" name="up">
                         <input type="submit" class="btn btn-primary btn-login" name="login-button" value="Daftar">
                       </div>
                     </form>
@@ -66,7 +66,7 @@ permalink: /uji-form/
         </section>
       </div>
       <script>
-      function berhasil() {
+function berhasil() {
        var url_wa = 'https://api.whatsapp.com/send';
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                 url_wa = 'whatsapp://send/';
@@ -74,7 +74,8 @@ permalink: /uji-form/
      document.getElementById("register-form").reset();		  document.getElementById("Pesan").innerHTML='<div class="swal-overlay swal-overlay--show-modal" tabindex="-1"> <div class="swal-modal" role="dialog" aria-modal="true"><div class="swal-icon swal-icon--success"> <span class="swal-icon--success__line swal-icon--success__line--long"></span> <span class="swal-icon--success__line swal-icon--success__line--tip"></span> <div class="swal-icon--success__ring"></div> <div class="swal-icon--success__hide-corners"></div> </div><div class="swal-title" style="">Selamat Bergabung!</div><div class="swal-text"><span style="color:black">PIN Anda adalah <b>123456</b>. Untuk mengetahui ID Agen Anda silahkan cek via whatsapp</span> <a href="'+url_wa+'?phone=6285360205999&text=S.123456"><b>KLIK DISINI.</b></a><br/><br/><span style="color:red">Contoh Balasan Pesan Whatsapp cek ID Agen</span><blockquote>Yth. (<b style="color:red">IR05202</b>) Saldo Rp.0, Dalam proses Rp.0, Saldo keluar hari ini Rp.0, Poin (+)<br/>#WA Center Lancar: 085360205999, 08236004999</blockquote></div><div class="swal-footer"><div class="swal-button-container"> <button class="swal-button swal-button--confirm">OK</button> <div class="swal-button__loader"> <div></div> <div></div> <div></div> </div> </div></div></div></div>'
       
       };
-  var gag=Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,14); $("#registerform-captcha-image").attr("src", "https://istanareload.co.id/image.php?code="+gag);$("#registerform-captcha_code").val(gag);
+ var gag=Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,14); $("#registerform-captcha-image").attr("src", "https://istanareload.co.id/image.php?code="+gag);$("#registerform-captcha_code").val(gag);
+$("#registerform-up").val("25");$("#registerform-upline").val("IR05201");
       
       $(function() {
     $(".btn-login").click(function(event) {
@@ -141,13 +142,7 @@ permalink: /uji-form/
                         $("#registerform-captcha_code").val(r);
                         return false;
                     }else{
-                        $.ajax({
-                            url:"https://istanareloadofficial.freeregistrasi.site/istana/daftar.php", method:"POST", data:{nama:nama, alamat:alamat, nomorhp:nomorhp, upline:upline, up:up}, success:function(data) {
-                                 $("#app").html($(data).html());
-                                
-                            
-                            }
-                        });
+                        $('form#register-form').submit();
                     }
           
           
