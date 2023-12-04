@@ -2,69 +2,68 @@
 layout: null
 permalink: /uji-form/
 ---
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-      <title>Registrasi</title>
-      <link href="https://istanareload.co.id/assets/favicon.ico" rel="shortcut icon">
-      <link href="https://istanareload.co.id/assets/register.css" rel="stylesheet">
-      <link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
-    </head>
-    <body>
-      <div id="app">
-        <section class="section">
-          <div class="container mt-5 section-register">
-            <div class="row">
-              <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-                <div class="card card-primary">
-                  <div class="card-header"><h4>Registrasi</h4></div>
-                  <div class="card-body">
-                    <form id="register-form" method="post" action="https://familypulsa.co.id/daftar.php">
-                      <div class="form-group field-registerform-nama has-success">
-                        <input type="text" id="registerform-nama" class="form-control" name="nama" placeholder="Nama" aria-invalid="false">
-                      </div>
-                      <div class="form-group field-registerform-alamat">
-                        <input type="text" id="registerform-alamat" class="form-control" name="alamat" placeholder="Alamat">
-                      </div>
-                      <div class="form-group field-registerform-nomorhp">
-                        <input type="text" id="registerform-nomorhp" class="form-control" name="nomorhp" placeholder="Nomor HP">
-                      </div>
-                      <div class="form-captcha">
-                        <div class="form-group field-registerform-captcha">
-                          <div class="developit-captcha">
-                            <img id="registerform-captcha-image" style="width:100%" src="https://istanareload.co.id/image.php?code=" alt="">
-                          </div>
-                          <div class="developit-captcha">
-                            <button type="button" class="btn btn-primary btn-sm captcha-refresh" id="btn-refresh"><i class="fas fa-sync-alt"></i></button>
-                          </div>
-                          <div class="developit-captcha">
-                            <input type="text" id="registerform-captcha" class="form-control" name="captcha" placeholder="Verifikasi">
-                            <input type="hidden" id="registerform-captcha_code" name="captcha_code" value="">
-                          </div>
-                          <div class="developit-captcha">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <input type="hidden" id="registerform-upline" name="upline" value="FP17499">
-                        <input type="hidden" id="registerform-up" name="up" value="25">
-                        <input type="submit" class="btn btn-primary btn-login" name="login-button" value="Daftar">
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <script src="https://istanareload.co.id/assets/jquery.js"></script>
-      <script>
-  var gag=Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,14); $("#registerform-captcha-image").attr("src", "https://istanareload.co.id/image.php?code="+gag);$("#registerform-captcha_code").val(gag);
-      
-      $(function() {
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+<title>Registrasi</title>
+<link href="https://istanareload.co.id/assets/favicon.ico" rel="shortcut icon">
+<link href="https://istanareload.co.id/assets/register.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+<section class="section">
+<div class="container mt-5 section-register">
+<div class="row">
+<div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+<div class="card card-primary">
+<div class="card-header"><h4>Registrasi</h4></div>
+<div class="card-body">
+<form id="register-form" method="post">
+<div class="form-group field-registerform-nama has-success">
+<input type="text" id="registerform-nama" class="form-control" name="RegisterForm[nama]" placeholder="Nama" aria-invalid="false">
+</div>
+<div class="form-group field-registerform-alamat">
+<input type="text" id="registerform-alamat" class="form-control" name="RegisterForm[alamat]" placeholder="Alamat">
+</div>
+<div class="form-group field-registerform-nomorhp">
+<input type="text" id="registerform-nomorhp" class="form-control" name="RegisterForm[nomorhp]" placeholder="Nomor HP">
+</div>
+<div class="form-captcha">
+<div class="form-group field-registerform-captcha">
+<div class="developit-captcha">
+<img id="registerform-captcha-image" style="width:100%" src="https://istanareloadofficial.freeregistrasi.site/istana/image.php?code=31a2e7f8b1d94c2e5efcbcf00eccfb52" alt>
+</div>
+<div class="developit-captcha">
+<button type="button" class="btn btn-primary btn-sm captcha-refresh" id="btn-refresh"><i class="fas fa-sync-alt"></i></button>
+</div>
+<div class="developit-captcha">
+<input type="text" id="registerform-captcha" class="form-control" name="captcha" placeholder="Verifikasi">
+<input type="hidden" id="registerform-captcha_code" name="captcha_code" value="31a2e7f8b1d94c2e5efcbcf00eccfb52">
+</div>
+<div class="developit-captcha">
+</div>
+</div>
+</div>
+<div class="form-group">
+<input type="hidden" id="registerform-upline" name="RegisterForm[upline]" value="IR05202">
+<input type="hidden" id="registerform-up" name="RegisterForm[up]" value="25">
+<input type="submit" class="btn btn-primary btn-login" name="login-button" value="Daftar">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script src="https://istanareload.co.id/assets/jquery.js"></script>
+<script>
+    $(function() {
     $(".btn-login").click(function(event) {
         event.preventDefault();
         var filter = /^[A-Za-z ]+$/;
@@ -119,21 +118,30 @@ permalink: /uji-form/
         if (nama != '' && alamat != '' && nomorhp != '' && captcha != '') {
             var upline = $("#registerform-upline").val();
             var up = $("#registerform-up").val();
-       		var valid_cap = captcha_code.substring(10, 15);
-          
-            if (valid_cap != captcha) {
-           alert('Kode Verifikasi yang Anda masukkan salah.');
-            $("#registerform-captcha").val("")
+            $.ajax({
+                url:"https://istanareloadofficial.freeregistrasi.site/istana/daftar.php", method:"POST", data:{captcha:captcha, captcha_code:captcha_code}, success:function(data) {
+                    if (data != 'success') {
+                        alert('Kode Verifikasi yang Anda masukkan salah.');
                         let r = Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15);
-                        $("#registerform-captcha-image").attr("src", "https://istanareload.co.id/image.php?code="+r);
+                        $("#registerform-captcha-image").attr("src", "https://istanareloadofficial.freeregistrasi.site/istana/image.php?code="+r);
                         $("#registerform-captcha_code").val(r);
                         return false;
                     }else{
-                        $('form#register-form').submit();
+                        $.ajax({
+                            url:"https://istanareloadofficial.freeregistrasi.site/istana/daftar.php", method:"POST", data:{nama:nama, alamat:alamat, nomorhp:nomorhp, upline:upline, up:up}, success:function(data) {
+                                var result = JSON.parse(data);
+                                if (result['status'] == 0) {
+                                    alert(result['message']);
+                                    return false;
+                                }else{
+                                    var result_success = '<div class="alert alert-success alert-has-icon"><div class="alert-icon"><i class="far fa-lightbulb"></i></div><div class="alert-body"><div class="alert-title">Berhasil</div>'+result['message']+'</div></div>';
+                                    $("#app").html(result_success);
+                                }
+                            }
+                        });
                     }
-          
-          
-          
+                }
+            });
         }
     });
 });
@@ -145,9 +153,9 @@ $(document).ready(function() {
 });
 $('#btn-refresh').on('click', function(e) {
     var r = Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15);
-    $("#registerform-captcha-image").attr("src", "https://istanareload.co.id/image.php?code="+r);
+    $("#registerform-captcha-image").attr("src", "https://istanareloadofficial.freeregistrasi.site/istana/image.php?code="+r);
     $("#registerform-captcha_code").val(r);
 });
-      </script>
-    </body>
-    </html>
+</script>
+</body>
+</html>
