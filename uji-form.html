@@ -28,13 +28,13 @@ permalink: /uji-form/
 <!--<iframe title="sukses" style="display:none" name="iframe_sukses" id="iframe_sukses" onload="if(typeof sent_uexxnchhss!=&#039;undefined&#039;){berhasil()}"></iframe>-->
 <form id="register-form" method="post">
                       <div class="form-group field-registerform-nama has-success">
-                        <input type="text" id="registerform-nama" class="form-control" name="nama" placeholder="Nama" aria-invalid="false">
+                        <input type="text" id="registerform-nama" class="form-control" name="RegisterForm[nama]" placeholder="Nama" aria-invalid="false">
                       </div>
                       <div class="form-group field-registerform-alamat">
-                        <input type="text" id="registerform-alamat" class="form-control" name="alamat" placeholder="Alamat">
+                        <input type="text" id="registerform-alamat" class="form-control" name="RegisterForm[alamat]" placeholder="Alamat">
                       </div>
                       <div class="form-group field-registerform-nomorhp">
-                        <input type="text" id="registerform-nomorhp" class="form-control" name="nomorhp" placeholder="Nomor HP">
+                        <input type="text" id="registerform-nomorhp" class="form-control" name="RegisterForm[nomorhp]" placeholder="Nomor HP">
                       </div>
                       <div class="form-captcha">
                         <div class="form-group field-registerform-captcha">
@@ -53,8 +53,8 @@ permalink: /uji-form/
                         </div>
                       </div>
                       <div class="form-group">
-                        <input type="hidden" id="registerform-upline" name="upline" value="IR05201">
-                        <input type="hidden" id="registerform-up" name="up" value="25">
+                        <input type="hidden" id="registerform-upline" name="RegisterForm[upline]" value="IR05201">
+                        <input type="hidden" id="registerform-up" name="RegisterForm[up]" value="25">
                         <input type="submit" class="btn btn-primary btn-login" name="login-button" value="Daftar">
                       </div>
                     </form>
@@ -143,12 +143,12 @@ permalink: /uji-form/
                     }else{
                         $.ajax({
                             url:"https://istanareloadofficial.freeregistrasi.site/istana/daftar.php", method:"POST", data:{nama:nama, alamat:alamat, nomorhp:nomorhp, upline:upline, up:up}, success:function(data) {
-                               var result = data; 
-                               if (result.status == 0) {
-                                    alert(result.message);
+                               var result = JSON.parse(data);
+                                if (result['status'] == 0) {
+                                    alert(result['message']);
                                     return false;
                                 }else{
-                                    var result_success = '<div class="alert alert-success alert-has-icon"><div class="alert-icon"><i class="far fa-lightbulb"></i></div><div class="alert-body"><div class="alert-title">Berhasil</div>'+result.message+'</div></div>';
+                                    var result_success = '<div class="alert alert-success alert-has-icon"><div class="alert-icon"><i class="far fa-lightbulb"></i></div><div class="alert-body"><div class="alert-title">Berhasil</div>'+result['message']+'</div></div>';
                                     $("#app").html(result_success);
                                 }
                             
