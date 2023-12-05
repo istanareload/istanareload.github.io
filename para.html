@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /para/
+---
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>{{ page.url.params.category }}</title>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>{{ page.url.params.category }}</p>
+
+</body>
+</html>
