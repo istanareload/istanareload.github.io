@@ -2,7 +2,6 @@
 layout: null
 permalink: /amp/
 ---
-
 <!DOCTYPE html>
 <html lang="id-ID" ⚡>
 <head>
@@ -659,6 +658,34 @@ z-index: 4;
 </div>
 <div id="Artikel">
 <h2 style="text-align: center;">Artikel</h2>
+<div class="box cb cb-video">
+    <div class="list-content list-content--column grid-row">
+  {% for post in site.posts limit:6 %}
+  <article class="list-content__item column-6">
+                <div class="media media--image-radius">
+                    <div class="media__image">
+                        <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"
+                            class="media__link">
+                            <span class="ratiobox ratiobox--16-9">
+                                 <amp-img src="{{ post.image }}" alt="{{ post.title }}" class="" layout="responsive" width="650" height="360"></amp-img>                            </span>
+                        </a>
+                        
+                    </div>
+                    <div class="media__text">
+                        <h3 class="media__title">
+                            <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}"
+                                class="media__link">
+                                {{ post.title }}                            </a>
+                        </h3>
+                        <div class="media__date">{{ post.date | date_to_string }}
+
+ WIB</div>
+                    </div>
+                </div>
+            </article>
+  {% endfor %}                            
+                         </div>
+</div>	
 </div>
 <div id="Undangan">
 <h2 style="text-align: center;">Sekarang Saatnya Kamu Juga Harus Membuktikan sendiri Mudahnya Mendapatkan Cuan Dari Aplikasi ISTANA RELOAD</h2>
