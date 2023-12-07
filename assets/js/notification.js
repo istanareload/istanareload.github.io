@@ -29,7 +29,7 @@ Lobibox.notify('success', {
                     msg: '<b>'+(mNamaOrang(1), SuksesDaftar)+' (IR'+(maketextnumber(5), randomtextnumber)+')</b> SUKSES bergabung di Istana Reload. Jarak dari Anda '+(UkuranJarak(2), Kilometer)+'Km'
                 });}
 (function loop() {
-    var rand = Math.floor(Math.random() * 39999);
+    var rand = Math.floor(Math.random() * 29999);
     setTimeout(function() {
             doSomething();
             loop();  
