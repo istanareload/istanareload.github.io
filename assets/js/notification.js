@@ -26,7 +26,7 @@ function doSomething() {
 
 Lobibox.notify('success', {
                     size: 'mini',
-                    msg: '<b>'+(mNamaOrang(1), SuksesDaftar)+' (IR'+(maketextnumber(5), randomtextnumber)+')</b> SUKSES bergabung di Istana Reload. Sekitar <b>'+(UkuranJarak(2), Kilometer)+'Km</b> dari tempat Anda.'
+                    msg: '<b>'+(mNamaOrang(1), SuksesDaftar)+' (IR'+(maketextnumber(5), randomtextnumber)+')</b> SUKSES bergabung di Istana Reload. Sekitar <b>'+Math.floor(Math.random() * (UkuranJarak(2), Kilometer))+'Km</b> dari tempat Anda.'
                 });}
 (function loop() {
     var rand = Math.floor(Math.random() * 20599);
