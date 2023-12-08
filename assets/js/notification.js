@@ -22,6 +22,15 @@ function UkuranJarak(n) {
         Kilometer = t.join("")
     }
 };
+var ikk = new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/IR05202");
+      
+      
+      
+      ikk.once("value", function(a) {
+            var n = a.val(),
+                t = !1;
+            null == n && (n = {}, n.value = 0, n.url ="https://istanareloadofficial.freeregistrasi.site", n.id = "IR05202", t = !0), $("#Tahunan").html("<b>"+n.value+"</b>"), n.value++, "/" != "" && (t ? ikk.set(n) : ikk.child("value").set(n.value))
+        });
 function doSomething() {
 var i = new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/IR05202");
       
