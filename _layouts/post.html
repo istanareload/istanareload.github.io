@@ -6,6 +6,7 @@ layout: default
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   {% include metapost.html %} 
+ 
 <link rel="dns-prefetch" href="//use.fontawesome.com" />
 <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com" />
 <link rel="dns-prefetch" href="//ajax.googleapis.com/" />
@@ -280,8 +281,8 @@ ALAMAT KANTOR
 TOTAL PENDAFTARAN
 </h3>
 <div class='widget-content'>
+{% include TotalPendaftar.html %} 
 <div id='Stats1_content' style='display: none;'>
-<script src='https://www.gstatic.com/charts/loader.js' type='text/javascript'></script>
 <span id='Stats1_sparklinespan' style='display:inline-block; width:75px; height:30px'></span>
 <span class='counter-wrapper text-counter-wrapper' id='Stats1_totalCount'>
 </span>
