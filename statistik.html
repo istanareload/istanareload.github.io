@@ -1,0 +1,71 @@
+---
+layout: null
+permalink: /statistik/
+---
+<!DOCTYPE html>
+<html><head>
+<meta name="robots" content="noindex"><style>
+        .StatisticPendaftar h3 {
+    font-weight: 600;
+    padding: 10px;
+    margin: 20px 0 10px;
+    background: #2167c7;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 3px;
+}.StatisticPendaftar tr {
+    border-bottom: 1px solid #cdcdcd;
+}.StatisticPendaftar td {
+    padding: 5px;
+    font-size: 16px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="//cdn.firebase.com/js/client/2.2.1/firebase.js" ></script>
+</head>
+<body>
+
+
+<div class="StatisticPendaftar"><h3>Statistic Pendaftar</h3>
+<table style="text-align: center; width: 100%;">
+<tbody>
+<tr><td style="text-align: left;"><span style><b>Hari Ini:</b></span></td>
+<td id="Harian" style=" text-align: center;"><span>Loading</span>...</td>
+</tr>
+<tr><td style="text-align: left;"><span style><b>Kemarin:</b></span></td>
+<td id="Kemarin" style=" text-align: center;"><span>Loading</span>...</td>
+</tr>
+<tr><td style="text-align: left;"><span style><b>Mingguan Ini:</b></span></td>
+<td id="Mingguan" style=" text-align: center;"><span>Loading</span>...</td>
+</tr>
+<tr><td style="text-align: left;"><span style><b>Total Pendaftaran:</b></span></td>
+<td id="Tahunan" style=" text-align: center;"><span>Loading</span>...</td>
+</tr>
+</tbody></table>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<input type="hidden" id="minggu1" />
+<input type="hidden" id="minggu2" />
+<input type="hidden" id="minggu3" />
+<input type="hidden" id="minggu4" />
+<input type="hidden" id="minggu5" />
+<input type="hidden" id="minggu6" />
+<input type="hidden" id="minggu7" />
+</div>
+<script>
+function Statistic(){
+  dateTo=moment().format("YYYYMMDD"),dateFrom=moment().subtract(1,"d").format("YYYYMMDD"),dateFrom1=moment().subtract(1,"d").format("YYYYMMDD"),dateFrom2=moment().subtract(2,"d").format("YYYYMMDD"),dateFrom3=moment().subtract(3,"d").format("YYYYMMDD"),dateFrom4=moment().subtract(4,"d").format("YYYYMMDD"),dateFrom5=moment().subtract(5,"d").format("YYYYMMDD"),dateFrom6=moment().subtract(6,"d").format("YYYYMMDD");var a=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateTo);a.once("value",function(e){var t=e.val(),l=!1;null==t&&((t={}).value=0,t.url="https://istanareloadofficial.freeregistrasi.site",t.id=dateTo,l=!0),$("#minggu1").val(t.value),t.value++,l?a.set(t):a.child("value").set(t.value)});var e=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom1);e.once("value",function(a){var t=a.val(),l=!1;null==t&&((t={}).value=0,t.url="https://istanareloadofficial.freeregistrasi.site",t.id=dateFrom1,l=!0),$("#minggu2").val(t.value),l?e.set(t):e.child("value").set(t.value)});var t=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom2);t.once("value",function(a){var e=a.val(),l=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateFrom2,l=!0),$("#minggu3").val(e.value),l?t.set(e):t.child("value").set(e.value)});var l=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom3);l.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateFrom3,t=!0),$("#minggu4").val(e.value),t?l.set(e):l.child("value").set(e.value)});var i=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom4);i.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateFrom4,t=!0),$("#minggu5").val(e.value),t?i.set(e):i.child("value").set(e.value)});var s=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom5);s.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateFrom5,t=!0),$("#minggu6").val(e.value),t?s.set(e):s.child("value").set(e.value)});var u=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom6);u.once("value",function(a){var e,t,l,i,s,r,v,n=a.val(),f=!1;null==n&&((n={}).value=0,n.url="https://istanareloadofficial.freeregistrasi.site",n.id=dateFrom6,f=!0),$("#minggu7").val(n.value),f?u.set(n):u.child("value").set(n.value),e=parseInt($("#minggu1").val()),t=parseInt($("#minggu2").val()),l=parseInt($("#minggu3").val()),i=parseInt($("#minggu4").val()),s=parseInt($("#minggu5").val()),r=parseInt($("#minggu6").val()),v=parseInt($("#minggu7").val()),$("#Mingguan").html("<b>"+(e+t+l+i+s+r+v)+"</b>")});var r=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateTo);r.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateTo,t=!0),$("#Harian").html("<b>"+e.value+"</b>"),e.value++,t?r.set(e):r.child("value").set(e.value)});var v=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom);v.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateFrom,t=!0),$("#Kemarin").html("<b>"+e.value+"</b>"),t?v.set(e):v.child("value").set(e.value)});var n=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/IR05202");n.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id="IR05202",t=!0),$("#Tahunan").html("<b>"+e.value+"</b>"),e.value++,t?n.set(e):n.child("value").set(e.value)})}Statistic();
+function doSomething() {
+Statistic();
+ 
+ };
+(function loop() {
+    var rand = Math.floor(Math.random() * 39999);
+    setTimeout(function() {
+            doSomething();
+            loop();  
+    }, rand);
+}());
+</script>
+
+
+</body></html>
