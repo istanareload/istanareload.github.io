@@ -31,7 +31,7 @@ Lobibox.notify('success', {
  
  }
 (function loop() {
-    var rand = Math.floor(Math.random() * 39999);
+    var rand = Math.floor(Math.random() * 59999);
     setTimeout(function() {
             doSomething();
             loop();  
