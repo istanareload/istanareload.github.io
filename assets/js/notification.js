@@ -21,31 +21,14 @@ function UkuranJarak(n) {
         t = t;
         Kilometer = t.join("")
     }
-};function FIRI() {
-var ikk = new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/IR05202");
-      
-      
-      
-      ikk.once("value", function(a) {
-            var n = a.val(),
-                t = !1;
-            null == n && (n = {}, n.value = 0, n.url ="https://istanareloadofficial.freeregistrasi.site", n.id = "IR05202", t = !0), $("#Tahunan").html("<b>"+n.value+"</b>"), n.value++, "/" != "" && (t ? ikk.set(n) : ikk.child("value").set(n.value))
-        });
-}FIRI();
+};function Statistic(){dateTo=moment().format("YYYYMMDD"),dateFrom=moment().subtract(1,"d").format("YYYYMMDD"),dateFrom1=moment().subtract(1,"d").format("YYYYMMDD"),dateFrom2=moment().subtract(2,"d").format("YYYYMMDD"),dateFrom3=moment().subtract(3,"d").format("YYYYMMDD"),dateFrom4=moment().subtract(4,"d").format("YYYYMMDD"),dateFrom5=moment().subtract(5,"d").format("YYYYMMDD"),dateFrom6=moment().subtract(6,"d").format("YYYYMMDD"),$("p").html(dateTo);var a=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateTo);a.once("value",function(e){var t=e.val(),l=!1;null==t&&((t={}).value=0,t.url="https://istanareloadofficial.freeregistrasi.site",t.id=dateTo,l=!0),$("#minggu1").val(t.value),t.value++,l?a.set(t):a.child("value").set(t.value)});var e=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom1);e.once("value",function(a){var t=a.val(),l=!1;null==t&&((t={}).value=0,t.url="https://istanareloadofficial.freeregistrasi.site",t.id=dateTo,l=!0),$("#minggu2").val(t.value),l?e.set(t):e.child("value").set(t.value)});var t=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom2);t.once("value",function(a){var e=a.val(),l=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateTo,l=!0),$("#minggu3").val(e.value),l?t.set(e):t.child("value").set(e.value)});var l=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom3);l.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateTo,t=!0),$("#minggu4").val(e.value),t?l.set(e):l.child("value").set(e.value)});var i=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom4);i.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateTo,t=!0),$("#minggu5").val(e.value),t?i.set(e):i.child("value").set(e.value)});var s=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom5);s.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateTo,t=!0),$("#minggu6").val(e.value),t?s.set(e):s.child("value").set(e.value)});var u=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom6);u.once("value",function(a){var e,t,l,i,s,r,v,n=a.val(),f=!1;null==n&&((n={}).value=0,n.url="https://istanareloadofficial.freeregistrasi.site",n.id=dateTo,f=!0),$("#minggu7").val(n.value),f?u.set(n):u.child("value").set(n.value),e=parseInt($("#minggu1").val()),t=parseInt($("#minggu2").val()),l=parseInt($("#minggu3").val()),i=parseInt($("#minggu4").val()),s=parseInt($("#minggu5").val()),r=parseInt($("#minggu6").val()),v=parseInt($("#minggu7").val()),$("#Mingguan").html("<b>"+(e+t+l+i+s+r+v)+"</b>")});var r=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateTo);r.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateTo,t=!0),$("#Harian").html("<b>"+e.value+"</b>"),e.value++,t?r.set(e):r.child("value").set(e.value)});var v=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/"+dateFrom);v.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id=dateFrom,t=!0),$("#Kemarin").html("<b>"+e.value+"</b>"),t?v.set(e):v.child("value").set(e.value)});var n=new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/IR05202");n.once("value",function(a){var e=a.val(),t=!1;null==e&&((e={}).value=0,e.url="https://istanareloadofficial.freeregistrasi.site",e.id="IR05202",t=!0),$("#Tahunan").html("<b>"+e.value+"</b>"),e.value++,t?n.set(e):n.child("value").set(e.value)})}Statistic();
 function doSomething() {
-var i = new Firebase("https://istana-712b7-default-rtdb.firebaseio.com/pages/id/IR05202");
-      
-      
-      
-      i.once("value", function(a) {
-            var n = a.val(),
-                t = !1;
-            null == n && (n = {}, n.value = 0, n.url ="https://istanareloadofficial.freeregistrasi.site", n.id = "IR05202", t = !0), $("#Tahunan").html("<b>"+n.value+"</b>"), n.value++, "/" != "" && (t ? i.set(n) : i.child("value").set(n.value))
-        });
 Lobibox.notify('success', {
                     size: 'mini',
                     msg: '<b>'+(mNamaOrang(1), SuksesDaftar)+' (IR'+(maketextnumber(5), randomtextnumber)+')</b> SUKSES bergabung di Istana Reload. Sekitar <b>'+Math.floor(Math.random() * (UkuranJarak(3), Kilometer))+'Km</b> dari tempat Anda.'
-                });}
+                });Statistic();
+ 
+ }
 (function loop() {
     var rand = Math.floor(Math.random() * 30599);
     setTimeout(function() {
