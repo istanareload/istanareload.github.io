@@ -8,7 +8,8 @@ title: Istana Reload Official
 
 
 
-<script type='text/javascript'> function closeModal() { document.getElementById('tombolchat').classList.remove('aktif'); document.getElementById('whatsappchat').classList.remove('aktif') } function openModal() { document.getElementById('tombolchat').classList.add('aktif') document.getElementById('whatsappchat').classList.add('aktif') } // Onclick Whatsapp Sent! 
+<script type='text/javascript'> function closeModal() { document.getElementById('tombolchat').classList.remove('aktif'); document.getElementById('whatsappchat').classList.remove('aktif') } function openModal() { document.getElementById('tombolchat').classList.add('aktif'); 
+																																																				   document.getElementById('whatsappchat').classList.add('aktif') } // Onclick Whatsapp Sent! 
 $('#whatsappchat .submit').click(whatsappchat); var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/; function whatsappchat() { var ph = ''; if ($('#whatsappchat .nama').val() == '') { 
   // Cek Nama 
   ph = $('#whatsappchat .nama').attr('placeholder'); alert('Silahkan tulis ' + ph); $('#whatsappchat .nama').focus(); return false; } else if ($('#whatsappchat .alamat').val() == '') { 
