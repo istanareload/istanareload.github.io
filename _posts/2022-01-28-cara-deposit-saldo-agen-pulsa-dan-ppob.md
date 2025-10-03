@@ -13,7 +13,34 @@ keyword:
 ---
 <p>Kamu Sudah Terdaftar di Istana Reload ? <br />Tapi Bingung Bagaimana Cara Deposit atau Isi Saldo nya?<br />Yuk Simak Panduan Mudah Deposit di ISTANA RELOAD</p>
 <h3><b>Apa itu Deposit??</b></h3>
-<p>Deposit Istana Reload Artinya adalah dana yang nanti di gunakan untuk membeli produk layanan di Server kami melalui Handphone anda.</p><p>Deposit itu nanti tersimpan dalam bentuk SALDO dalam Aplikasi istana Reload di Hp Anda, saldo deposit tersebut TIDAK dalam bentuk PULSA, yang artinya terpisah dengan Pulsa yang anda gunakan pada handphone</p><p>Di Setiap Transaksi nanti, Saldo Deposit akan dikurangi sesuai dengan harga pokok produk yang berlaku saat melakukan transaksi isi ulang atau pembayaran tersebut.</p><p>Deposit di ISTANA RELOAD tidak akan hangus karena deposit tidak dalam bentuk pulsa serta tidak akan berkurang apabila tidak dipergunakan untuk melakukan transaksi.</p><h4><b>Rekening Bank ISTANA RELOAD</b></h4>
+<p>Deposit Istana Reload Artinya adalah dana yang nanti di gunakan untuk membeli produk layanan di Server kami melalui Handphone anda.</p><p>Deposit itu nanti tersimpan dalam bentuk SALDO dalam Aplikasi istana Reload di Hp Anda, saldo deposit tersebut TIDAK dalam bentuk PULSA, yang artinya terpisah dengan Pulsa yang anda gunakan pada handphone</p><p>Di Setiap Transaksi nanti, Saldo Deposit akan dikurangi sesuai dengan harga pokok produk yang berlaku saat melakukan transaksi isi ulang atau pembayaran tersebut.</p><p>Deposit di ISTANA RELOAD tidak akan hangus karena deposit tidak dalam bentuk pulsa serta tidak akan berkurang apabila tidak dipergunakan untuk melakukan transaksi.</p>
+<h3><b>Tutorial Isi Saldo Istana Reload</b></h3>
+<div class="video-container">
+  <iframe 
+    src="https://www.youtube.com/embed/C5mQCGm1uw8?si=nExfZ7y-MiHv10E0" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+<style>
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+<h4><b>Rekening Bank ISTANA RELOAD</b></h4>
 <p><br />
 <script src="https://istanareload.co.id/logobca.php" type="text/javascript"></script><br />
 <script src="https://istanareload.co.id/rekbca.php" type="text/javascript"></script><br />
