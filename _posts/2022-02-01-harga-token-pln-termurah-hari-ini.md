@@ -26,4 +26,4 @@ keyword:
 
 <h4 style="clear: both; text-align: center;">Harga PLN Token Listrik<br />
 <script src="https://istanareload.co.id/tanggal.js" type="text/javascript"></script></h4><br />
-<script src="https://istanareload.co.id/harga.php?type=js&amp;lvl=RS&amp;up=25&amp;cttn=PLN" type="text/javascript"></script>
+<script src="https://istanareload.co.id/harga.php?type=js&amp;level=RS&amp;up=0&amp;grup=PLN" type="text/javascript"></script>
