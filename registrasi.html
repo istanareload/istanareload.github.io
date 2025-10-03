@@ -2,8 +2,6 @@
 layout: null
 permalink: /registrasi/
 ---
-
-
 <!DOCTYPE html>
 <html lang="id-ID">
 <head><meta name="google-site-verification" content="C0ehXkV7VpM8-5SlJMEbHq8jsX8bjiylOHjGFKzvh5E" />
@@ -1509,10 +1507,14 @@ const data = { nama, alamat, nomorhp, recaptcha };
     const petunjukDiv = document.getElementById("petunjuk");
 
     if (result.succes === "1") {
-      // reset & hide form
+      const {nama,kode,pin,nomorhp,alamat} = result;
+      const data={nama,kode,pin,nomorhp,alamat}
+      const a=btoa(JSON.stringify(data))
+      localStorage.setItem("user", a);
+      location.href="/succes/"
       document.getElementById("daftarForm").reset();
       document.getElementById("form-container").style.display = "none";
-
+user
       resultDiv.className = "success";
       resultDiv.style.display = "block";
       resultDiv.innerHTML = `
@@ -2053,3 +2055,4 @@ function Bukaregis() {
 
 </body>
 </html>
+
