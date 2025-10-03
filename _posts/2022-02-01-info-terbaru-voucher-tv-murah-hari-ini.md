@@ -24,4 +24,4 @@ keyword:
 <div align="center"><a href="javascript:void(0);" onclick="openModal()"><img alt="Daftar Via WhatsApp" src="https://gambar.unduh.me/daftarwa.png" title="Daftar Via WhatsApp" /></a></div>
 <h4 style="clear: both; text-align: center;">Harga Voucher TV Murah<br />
 <script src="https://istanareload.co.id/tanggal.js" type="text/javascript"></script></h4><br />
-<script src="https://istanareload.co.id/harga.php?type=js&amp;lvl=RS&amp;up=25&amp;cttn=TV" type="text/javascript"></script>
+<script src="https://istanareload.co.id/harga.php?type=js&amp;level=RS&amp;up=0&amp;grup=TV" type="text/javascript"></script>
