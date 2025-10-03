@@ -3,6 +3,7 @@ layout: null
 permalink: /registrasi/
 ---
 
+
 <!DOCTYPE html>
 <html lang="id-ID">
 <head>
@@ -13,7 +14,7 @@ permalink: /registrasi/
 <meta name="description" content="Istana Reload - Untuk daftar menjadi agen pulsa dan PPOB termurah dari Istana Reload, Silahkan isi form dibawah ini untuk melakukan pendaftaran Istana Reload." class="yoast-seo-meta-tag" />
 <meta content="daftar istana reload,pendaftaran official istana reload,cara daftar istana reload,registrasi istana reload,daftar agen pulsa,bergabung menjadi agen pulsa,istana reload official, istana reload apk, agen pulsa, daftar agen pulsa, agen pulsa termurah, aplikasi jual pulsa murah, istana reload, aplikasi top up game murah, aplikasi token listrik murah, cara jadi agen pulsa, aplikasi ppob murah, cara menjual pulsa, cara jual token listrik, agen token listrik, agen ppob, aplikasi ppob, jadi agen pulsa, daftar agen pulsa resmi, agen ppob resmi, reseller pulsa dan ppob" name="keywords" />
 <meta name="content_tags" content="daftar istana reload,pendaftaran official istana reload,cara daftar istana reload,registrasi istana reload,daftar agen pulsa,bergabung menjadi agen pulsa,istana reload official, istana reload apk, agen pulsa, daftar agen pulsa, agen pulsa termurah, aplikasi jual pulsa murah, istana reload, aplikasi top up game murah, aplikasi token listrik murah, cara jadi agen pulsa, aplikasi ppob murah, cara menjual pulsa, cara jual token listrik, agen token listrik, agen ppob, aplikasi ppob, jadi agen pulsa, daftar agen pulsa resmi, agen ppob resmi, reseller pulsa dan ppob" />
-<link rel="canonical" href="{{ site.url }}/daftar/" class="yoast-seo-meta-tag" />
+<link rel="canonical" href="{{ site.url }}/registrasi/" class="yoast-seo-meta-tag" />
 <meta property="og:locale" content="id_ID" class="yoast-seo-meta-tag" />
 <meta property="og:type" content="article" class="yoast-seo-meta-tag" />
 <meta property="og:title" content="Daftar" class="yoast-seo-meta-tag" />
@@ -1376,10 +1377,36 @@ Menu Melayang
 </div>
 <div id="result" style="display:none;"></div>
 <div id="petunjuk" style="display:none;"></div>
+<div id="loadingOverlay">
+  <div class="spinner"></div>
+</div>
 
 <style>
+    /* Overlay Loading */
+    #loadingOverlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(5px);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+    .spinner {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #007BFF;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
 #form-container {
-  max-width: 400px;
+  width: 100%;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -1411,6 +1438,7 @@ Menu Melayang
 #form-container button:hover {
   background: #0056b3;
 }
+#form-container .mb-3 .g-recaptcha { place-items: center;justify-items: center; }
 #result {
   margin-top: 20px;
   padding: 15px;
@@ -1451,6 +1479,7 @@ Menu Melayang
 }</style>
 
 <script>
+const loadingOverlay = document.getElementById("loadingOverlay");
 document.getElementById("daftarForm").addEventListener("submit", async function(e) {
   e.preventDefault();
 
@@ -1463,8 +1492,8 @@ document.getElementById("daftarForm").addEventListener("submit", async function(
     alert("Silakan centang reCAPTCHA dulu.");
     return;
   }
-
-  const data = { nama, alamat, nomorhp, recaptcha };
+loadingOverlay.style.display = "flex";
+const data = { nama, alamat, nomorhp, recaptcha };
 
   try {
     const res = await fetch("https://ireload.cdnsophia.workers.dev/daftar.php", {
@@ -1523,11 +1552,16 @@ document.getElementById("daftarForm").addEventListener("submit", async function(
       resultDiv.innerHTML = `<h3>Gagal 🚫</h3><p>${result.pesan}</p>`;
       petunjukDiv.style.display = "none";
     }
+  grecaptcha.reset(); 
+  loadingOverlay.style.display = "none";
+// reset captcha
   } catch (err) {
     const resultDiv = document.getElementById("result");
     resultDiv.className = "error";
     resultDiv.style.display = "block";
     resultDiv.innerHTML = `<h3>Error ⚠️</h3><p>${err.message}</p>`;
+  grecaptcha.reset(); 
+  loadingOverlay.style.display = "none";
   }
 });
 </script>
@@ -1700,8 +1734,7 @@ WhatsApp Chat
 <span class="whatsappchat-x" onclick="closeModal()"></span>
 <p class="whatsappchat-title bg-gradien-linear">Pendaftaran Via WhatsApp</p>
 <div class="whatsappchat-body">
-<input class="tujuan" type="hidden" value="85360205999" />
-
+<input class="tujuan" type="hidden" value="{{ site.warRegis }}" />
 <input class="nama whatsappchat-input form-setengah" placeholder="Nama Anda.." type="text" />
 <input class="alamat whatsappchat-input form-setengah" placeholder="Kota Anda.." type="text" />
 <a class="submit"><i class="fa fa-whatsapp"></i> Daftar Sekarang</a>
@@ -2018,4 +2051,3 @@ function Bukaregis() {
 
 </body>
 </html>
-
