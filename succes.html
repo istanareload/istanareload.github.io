@@ -10,7 +10,7 @@ permalink: /succes/
    try{
    const a=atob(localStorage.getItem("user"));
      if(!a)location.href="/registrasi/"
-     USERData=JSON.parse(a)
+     USERDat=JSON.parse(a)
      }catch{
      location.href="/registrasi/"
    }
