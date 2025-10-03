@@ -1512,45 +1512,7 @@ const data = { nama, alamat, nomorhp, recaptcha };
       const a=btoa(JSON.stringify(data))
       localStorage.setItem("user", a);
       location.href="/succes/"
-      document.getElementById("daftarForm").reset();
-      document.getElementById("form-container").style.display = "none";
-user
-      resultDiv.className = "success";
-      resultDiv.style.display = "block";
-      resultDiv.innerHTML = `
-        <h3>Pendaftaran Berhasil 🎉</h3>
-        <p><strong>Nama:</strong> ${result.nama}<br/>
-        <strong>Kode Agen:</strong> ${result.kode}<br/>
-        <strong>PIN:</strong> ${result.pin}<br/>
-        <strong>No HP:</strong> ${result.nomorhp}<br/>
-        <strong>Alamat:</strong> ${result.alamat}</p>
-      `;
-
-      petunjukDiv.style.display = "block";
-      petunjukDiv.innerHTML = `
-        <h3>Panduan Selanjutnya</h3>
-        <p>Halo <b>${result.nama}</b>, selamat datang sebagai agen baru.<br/>Gunakan <b>Kode Agen: ${result.kode}</b> dan <b>PIN: ${result.pin}</b> untuk login dan transaksi.<br/>No HP terdaftar: <b>${result.nomorhp}</b><br/>Alamat Anda: <b>${result.alamat}</b></p>
-<h3 id="LangkahSelanjutnya">Jika Pendaftaran Berhasil</h3>
-<p>Catat KODE AGEN (Kode Agend Anda: <b>${result.kode}</b>) dan PIN (PIN Anda: <b>${result.pin}</b>) yang telah kamu dapatkan kemudian lanjut ke langkah di bawah ini</p>
-<p>Selanjutnya yang perlu kamu lakukan adalah:</p>
-<p></p>
-<ol style="text-align: left;"><li>Mendownload Aplikasi Istana Reload <b><a href="{{ site.app }}">DI SINI</a></b><div align="center"><a href="{{ site.app}}" target="_blank"><img src="https://gambar.unduh.me/playstore.svg" alt="Daftar Via Play Store" title="Daftar Via Play Store" style="max-width: 100%; height: auto; display: block;"/></a></div></li><li>Buka Aplikasinya</li><li>Masukkan no hp yang sudah kamu daftarkan</li><li>Silahkan minta kode OTP untuk login</li><li>Masukkan kode OTP yang sudah kamu dapatkan</li><li>Selesai</li></ol>
-<p>Perlu diingat untuk mengganti kode PIN Standar kamu agar akun kamu aman.</p>
-<p>Langkah Selanjutnya Setelah Melakukan Pendаftаrаn dan mendownload aplikasi, Kаmս bisa melakukan deposit atau isi saldo bisa dicoba dulu minimal cuma 50ribu saja,</p>
-<p>Untuk Panduan Deposit Silahkan Klik <b><a href="{{ site.url }}/cara-deposit-saldo-agen-pulsa-dan-ppob/" target="_blank">CARA DEPOSIT</a></b></p>
-<p>Jika deposit sudah masuk, Kаmս sudah bisa melakukan transaksi semua produk yang ada di Istana Reload untuk dipakai sendiri bahkan Kаmս bisa jual lagi karena harganya yang sangat murah.</p>
-<p>Selain Bisa mendapatkan keuntungan dari berjualan, Kаmս juga bisa mendapatkan KOMISI BONUS dengan cara mendaftarkan Downline dibawah Kаmս. silahkan baca <b><a href="{{ site.url }}/ajak-teman-untuk-menjadi-agen-pulsa-dan-ppob/" target="_blank">Ajak Teman untuk Menjadi Agen Pulsa dan PPOB</a></b></p>
-<h3>Video Tutorial Login Istana Reload</h3>
-<div class="video-container">
-  <iframe 
-    src="https://www.youtube.com/embed/5qHmLcC5POw?si=CfbxJZt9RRutbg8j" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-</div>
-
-      `;
-    } else {
+     } else {
       resultDiv.className = "error";
       resultDiv.style.display = "block";
       resultDiv.innerHTML = `<h3>Gagal 🚫</h3><p>${result.pesan}</p>`;
