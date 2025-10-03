@@ -24,4 +24,4 @@ keyword:
 <div align="center"><a href="javascript:void(0);" onclick="openModal()"><img alt="Daftar Via WhatsApp" src="https://gambar.unduh.me/daftarwa.png" title="Daftar Via WhatsApp" /></a></div>
 <h4 style="clear: both; text-align: center;">Fee Loket PPOB<br />
 <script src="https://istanareload.co.id/tanggalppob.js" type="text/javascript"></script></h4><br />
-<script src="https://istanareload.co.id/harga.php?type=js&amp;lvl=RS&amp;up=25&amp;cttn=PPOB" type="text/javascript"></script>
+<script src="https://istanareload.co.id/harga.php?type=js&amp;level=RS&amp;up=0&amp;grup=PPOB" type="text/javascript"></script>
