@@ -25,7 +25,7 @@ keyword:
 <p>Selain bisa lewat aplikasi, kаmu bisa daftar lewat center dengan mengirimkan format pendaftaran agen yaitu:</p><p>Format: <br /><span style="color: #2b00fe;">DAFTAR#NAMA#KOTA#NOMERHP#MARKUP#PIN</span><br />Contoh: <br /><span style="color: #2b00fe;">DAFTAR#AJI CELL#MEDAN#08199882111#50#151515</span><br />Kirim Ke Center WA atau SMS.</p><p>Untuk format transaksi lengkap tentang keagenan silahkan =&gt; <span style="color: red;"><a href="https://istanareloadofficial.freeregistrasi.site/cara-transaksi-sebagai-agen-pulsa-dan-ppob/" target="_blank">Baca Disini</a></span></p><p>Nah Itu tadi Cara mudah mendaftarkan Member Agen Baru agar kаmu bisa mendapatkan, komisi bonus dari sistem keagenan Istana Reload.</p>
 <div class="video-container">
   <iframe 
-    src="https://www.youtube.com/embed/5qHmLcC5POw?si=CfbxJZt9RRutbg8j" 
+    src="https://www.youtube.com/embed/6YoCSb013Xs" 
     frameborder="0" 
     allowfullscreen>
   </iframe>
