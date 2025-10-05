@@ -11,9 +11,9 @@ keyword:
 - cara transaksi agen ppob
 - transaksi istana reload
 ---
-<p>Langkah selanjutnya jika kamu sudah sukses <a href="https://istanareloadofficial.freeregistrasi.site/cara-daftar-jadi-agen-pulsa-murah/">terdaftar</a> Jadi Master Istana Reload dan sudah melakukan isi saldo deposit, maka sekarang saatnya kamu bisa berbisnis dengan berjualan pulsa serta transaksi pembayaran lainnya.</p>
+<p>Langkah selanjutnya jika kamu sudah sukses <a href="{{ site.url }}/cara-daftar-jadi-agen-pulsa-murah/">terdaftar</a> Jadi Master Istana Reload dan sudah melakukan isi saldo deposit, maka sekarang saatnya kamu bisa berbisnis dengan berjualan pulsa serta transaksi pembayaran lainnya.</p>
 <h3>Cara Transaksi Jualan Di Istana Reload</h3><p>Istana Reload sudah menyiapkan Format Cara Transaksi Yang Mudah dan Praktis yaitu bisa melalui Aplikasi Android, Center Whatsapp, Center Telegram Dan Center SMS. Berikut Ini Link Center Transaksi Istana Reload :</p><h3>Transaksi Lewat Aplikasi Istana Reload</h3><p>Sangat cocok buat kamu yang mempunyai handphone android, kamu bisa melakukan transaksi berjualan lewat aplikasi Istana Reload yang bisa kamu nikmati dalam satu genggaman saja.</p><p>Semua Transaksi Isi Pulsa, kuota data, token pln, pembayaran tagihan online cukup beberapa klik, tidak perlu repot menggunakan kode.</p><p>Pastikan Kamu sudah punya aplikasinya ya, Jika belum Silahkan Klik Link download dibawah ini</p>
-<script src="https://morenapulsa.co.id/android.php?referrer=L7JJ7" type="text/javascript"></script><h3>
+<div align="center"><a href="{{ site.app }}" target="_blank"><img src="https://gambar.unduh.me/playstore.svg" alt="Daftar Via Play Store" title="Daftar Via Play Store" style="max-width: 100%; height: auto; display: block;"/></a></div><h3>
 Transaksi Lewat WhatsApp Center</h3><p>Untuk melakukan Transaksi Lewat Whatsapp, Pastikan nomer kamu yang terdaftar di Istana Reload sudah terdaftar juga di WA, maka kamu cukup kirim format transaksi ke center.</p>
 <script src="https://istanareload.co.id/wacenter.php?link=yes" type="text/javascript"></script>
 <h3>Transaksi Lewat Telegram</h3><p>Kamu bisa juga melakukan transaksi melalui telegram di ISTANA RELOAD, sama seperti Wa &amp; SMS , cukup dengan mengirim format transaksi ke center telegram.</p>
