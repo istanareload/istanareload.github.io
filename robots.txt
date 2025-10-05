@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /succes/
 
-Sitemap: https://istanareloadofficial.freeregistrasi.site/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
